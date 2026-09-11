@@ -89,16 +89,13 @@ The bold prefix is for visual scanning when reading the source file directly; th
 
 Each `[[wikilink]]` in the file (whether in the body or the `## Notes` section) is classified into one of two kinds and validated accordingly:
 
-1. **Source citation** — block-reference form `[[X#^Y]]`, or bare `[[X]]` where X matches a file in `sources/`. The `X` stem must resolve to a real `sources/<X>.md` file. **Hard error** — an unresolved citation exits non-zero, because it almost always indicates a hallucinated source. Most source-citation wikilinks live inside `## Notes` entries (`[^N]: [[X#^Y|Author Year, §Y]]`), but the validation does not depend on position — any source wikilink anywhere in a file is checked.
+1. **Source citation** — block-reference form `[[X#^Y]]`, or bare `[[X]]` where X matches a file in `sources/`. The `X` stem must resolve to a real `sources/<X>.md` file, and a `#^Y` anchor must match a block ID (a line ending in `^Y`) inside that file. **Hard error** — either failure exits non-zero, because it almost always indicates a hallucinated source, or a hallucinated claim attributed to a real source. Most source-citation wikilinks live inside `## Notes` entries (`[^N]: [[X#^Y|Author Year, §Y]]`), but the validation does not depend on position — any source wikilink anywhere in a file is checked.
 2. **Concept link** — everything else. The bare stem (without any `#anchor` part) is resolved through the alias index. **Warning only** — red concept links are listed but do not cause a non-zero exit, because they're treated as a feature (frontier markers in `orphans.json`).
+
+It also checks footnotes: every `[^N]` reference must have a matching `[^N]:` definition in the same file (**hard error**, since the claim is left uncited), and a definition that no reference uses is reported as a warning.
 
 It does **not** validate:
 
-- That every `[^N]` footnote reference in the body has a matching `[^N]:` definition in the Notes section, or vice versa. (Markdown renderers like Obsidian will surface broken footnotes visually. The conversion script that introduces footnotes generates both reference and definition together, so manual edits are the only way they can drift apart.)
-- That the block-ID anchor `#^xxx` actually exists inside the source file.
-  (Anchors are free-form strings; validating them would require a separate
-  inventory in each source file. Obsidian itself will flag a click-through
-  to a missing block ID.)
 - That a `[[concept-id#section]]` heading anchor exists in the target concept
   file. The script resolves the bare stem and ignores the heading part.
 - That tags come from a controlled vocabulary. (Use `grep` and `AGENTS.md`

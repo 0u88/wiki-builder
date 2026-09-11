@@ -87,7 +87,7 @@ python scripts/check_links.py <wiki-root>
 python scripts/unused_claims.py <wiki-root>
 ```
 
-`check_links.py` exits non-zero if any source citation fails to resolve — this almost always means a hallucinated source. Wire it into a pre-commit hook if the wiki is git-tracked. `unused_claims.py` surfaces source block-ids that no concept article cites yet — the supply-side growth queue.
+`check_links.py` exits non-zero if any citation fails to resolve: a citation to a source file that does not exist, a `#^anchor` that does not exist inside the cited source file, or a `[^N]` footnote with no definition. The anchor check matters most: an LLM that hallucinates rarely invents a whole source, but it often attributes an invented claim to a real one. Wire it into a pre-commit hook if the wiki is git-tracked. `unused_claims.py` surfaces source block-ids that no concept article cites yet — the supply-side growth queue.
 
 ## Citation format
 
@@ -103,7 +103,7 @@ Something from a different source[^2].
 [^2]: [[zhu-2023-phasenet-das#^sec-methods|Zhu 2023, §sec-methods]]
 ```
 
-The `[[source-id#^anchor]]` wikilinks resolve to real block IDs in source files and are validated by `check_links.py`. Per-file footnote numbering — each concept article restarts at `[^1]`.
+`check_links.py` validates both halves of every `[[source-id#^anchor]]` wikilink: the source file must exist, and `^anchor` must be a block ID in that file's key claims. Per-file footnote numbering — each concept article restarts at `[^1]`.
 
 ## Math notation conventions
 
@@ -176,6 +176,7 @@ wiki-builder/
 │   ├── AGENTS.template.md                    # project-convention scaffold
 │   ├── CLAUDE.template.md                    # one-line stub routing Claude Code to AGENTS.md
 │   └── index.template.md                     # portal page scaffold
+├── tests/                                    # tests for the citation validator
 └── examples/
     └── tabpfn-wiki/                          # a complete wiki built with this skill (see below)
 ```
@@ -200,6 +201,15 @@ python scripts/check_links.py examples/tabpfn-wiki
 ```
 
 The original paper PDFs (`raw/`) are not redistributed. Each source file links to the public paper.
+
+## Tests
+
+```bash
+pip install pytest
+pytest
+```
+
+The tests build small wikis and check that `check_links.py` rejects a fabricated anchor in a real source, an unknown source, and a footnote without a definition. They also check that it accepts valid citations, red concept links and syntax examples in code, and that the example wiki passes.
 
 ## Design philosophy
 
