@@ -1,0 +1,37 @@
+{
+  "balazadeh-2025-causalpfn": {
+    "total_claims": 20,
+    "unused_claims": [
+      "arch-transformer",
+      "training-protocol"
+    ],
+    "unused_count": 2,
+    "utilization_pct": 90.0
+  },
+  "hollmann-2023-tabpfn": {
+    "total_claims": 17,
+    "unused_claims": [
+      "benchmark",
+      "size-limits"
+    ],
+    "unused_count": 2,
+    "utilization_pct": 88.2
+  },
+  "muller-2022-pfn": {
+    "total_claims": 13,
+    "unused_claims": [
+      "arch-riemann"
+    ],
+    "unused_count": 1,
+    "utilization_pct": 92.3
+  },
+  "robertson-2025-dopfn": {
+    "total_claims": 18,
+    "unused_claims": [
+      "dont-pfn",
+      "train-prior-scm"
+    ],
+    "unused_count": 2,
+    "utilization_pct": 88.9
+  }
+}

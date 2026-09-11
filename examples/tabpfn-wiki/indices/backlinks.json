@@ -1,0 +1,186 @@
+{
+  "2d-transformer-architecture": [
+    "concepts/handling-tabular-peculiarities.md",
+    "concepts/histogram-loss-quantized-distribution.md",
+    "concepts/in-context-learning.md",
+    "concepts/state-caching-inference.md",
+    "concepts/tabular-foundation-model.md"
+  ],
+  "amortized-causal-inference": [
+    "concepts/conditional-interventional-distribution.md",
+    "concepts/double-machine-learning-metalearners.md",
+    "concepts/front-door-back-door-criteria.md",
+    "concepts/observational-equivalence-unidentifiability.md",
+    "concepts/ood-robustness.md"
+  ],
+  "bayesian-neural-networks": [
+    "concepts/occams-razor.md",
+    "concepts/posterior-predictive-distribution.md",
+    "concepts/prior-data-fitted-networks.md",
+    "concepts/structural-causal-models.md",
+    "concepts/synthetic-data-prior.md",
+    "concepts/tabular-foundation-model.md"
+  ],
+  "common-effect-rct-simulation": [
+    "concepts/strong-ignorability.md"
+  ],
+  "conditional-expected-potential-outcome": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/conditional-interventional-distribution.md",
+    "concepts/double-machine-learning-metalearners.md",
+    "concepts/heterogeneity-control.md",
+    "concepts/histogram-loss-quantized-distribution.md",
+    "concepts/integrated-coverage-error.md",
+    "concepts/observational-equivalence-unidentifiability.md",
+    "concepts/strong-ignorability.md"
+  ],
+  "conditional-interventional-distribution": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/conditional-expected-potential-outcome.md",
+    "concepts/heterogeneity-control.md",
+    "concepts/histogram-loss-quantized-distribution.md",
+    "concepts/observational-equivalence-unidentifiability.md"
+  ],
+  "double-machine-learning-metalearners": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/heterogeneity-control.md",
+    "concepts/strong-ignorability.md"
+  ],
+  "front-door-back-door-criteria": [
+    "concepts/common-effect-rct-simulation.md",
+    "concepts/observational-equivalence-unidentifiability.md",
+    "concepts/strong-ignorability.md"
+  ],
+  "handling-tabular-peculiarities": [
+    "concepts/2d-transformer-architecture.md",
+    "concepts/structural-causal-models.md",
+    "concepts/zero-hyperparameter-tuning.md"
+  ],
+  "heterogeneity-control": [
+    "concepts/common-effect-rct-simulation.md",
+    "concepts/conditional-expected-potential-outcome.md"
+  ],
+  "histogram-loss-quantized-distribution": [
+    "concepts/conditional-expected-potential-outcome.md",
+    "concepts/conditional-interventional-distribution.md",
+    "concepts/integrated-coverage-error.md"
+  ],
+  "in-context-learning": [
+    "concepts/2d-transformer-architecture.md",
+    "concepts/amortized-causal-inference.md",
+    "concepts/posterior-predictive-distribution.md",
+    "concepts/prior-data-fitted-networks.md",
+    "concepts/state-caching-inference.md",
+    "concepts/tabular-foundation-model.md",
+    "concepts/zero-hyperparameter-tuning.md"
+  ],
+  "integrated-coverage-error": [
+    "concepts/double-machine-learning-metalearners.md",
+    "concepts/histogram-loss-quantized-distribution.md",
+    "concepts/observational-equivalence-unidentifiability.md",
+    "concepts/ood-robustness.md"
+  ],
+  "observational-equivalence-unidentifiability": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/conditional-expected-potential-outcome.md",
+    "concepts/conditional-interventional-distribution.md",
+    "concepts/front-door-back-door-criteria.md",
+    "concepts/integrated-coverage-error.md",
+    "concepts/ood-robustness.md",
+    "concepts/strong-ignorability.md"
+  ],
+  "occams-razor": [
+    "concepts/bayesian-neural-networks.md",
+    "concepts/prior-data-fitted-networks.md",
+    "concepts/structural-causal-models.md",
+    "concepts/synthetic-data-prior.md"
+  ],
+  "ood-robustness": [
+    "concepts/conditional-interventional-distribution.md",
+    "concepts/histogram-loss-quantized-distribution.md",
+    "concepts/integrated-coverage-error.md"
+  ],
+  "posterior-predictive-distribution": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/bayesian-neural-networks.md",
+    "concepts/conditional-expected-potential-outcome.md",
+    "concepts/in-context-learning.md",
+    "concepts/occams-razor.md",
+    "concepts/prior-data-fitted-networks.md",
+    "concepts/structural-causal-models.md",
+    "concepts/synthetic-data-prior.md",
+    "concepts/tabular-foundation-model.md",
+    "concepts/zero-hyperparameter-tuning.md"
+  ],
+  "prior-data-fitted-networks": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/bayesian-neural-networks.md",
+    "concepts/conditional-expected-potential-outcome.md",
+    "concepts/handling-tabular-peculiarities.md",
+    "concepts/in-context-learning.md",
+    "concepts/occams-razor.md",
+    "concepts/posterior-predictive-distribution.md",
+    "concepts/state-caching-inference.md",
+    "concepts/structural-causal-models.md",
+    "concepts/synthetic-data-prior.md",
+    "concepts/tabular-foundation-model.md"
+  ],
+  "state-caching-inference": [
+    "concepts/2d-transformer-architecture.md",
+    "concepts/in-context-learning.md"
+  ],
+  "strong-ignorability": [
+    "concepts/common-effect-rct-simulation.md",
+    "concepts/conditional-expected-potential-outcome.md",
+    "concepts/conditional-interventional-distribution.md",
+    "concepts/double-machine-learning-metalearners.md",
+    "concepts/front-door-back-door-criteria.md",
+    "concepts/heterogeneity-control.md",
+    "concepts/observational-equivalence-unidentifiability.md"
+  ],
+  "structural-causal-models": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/bayesian-neural-networks.md",
+    "concepts/conditional-interventional-distribution.md",
+    "concepts/front-door-back-door-criteria.md",
+    "concepts/handling-tabular-peculiarities.md",
+    "concepts/observational-equivalence-unidentifiability.md",
+    "concepts/occams-razor.md",
+    "concepts/posterior-predictive-distribution.md",
+    "concepts/prior-data-fitted-networks.md",
+    "concepts/strong-ignorability.md",
+    "concepts/synthetic-data-prior.md"
+  ],
+  "synthetic-data-prior": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/bayesian-neural-networks.md",
+    "concepts/common-effect-rct-simulation.md",
+    "concepts/conditional-expected-potential-outcome.md",
+    "concepts/front-door-back-door-criteria.md",
+    "concepts/handling-tabular-peculiarities.md",
+    "concepts/heterogeneity-control.md",
+    "concepts/occams-razor.md",
+    "concepts/ood-robustness.md",
+    "concepts/posterior-predictive-distribution.md",
+    "concepts/prior-data-fitted-networks.md",
+    "concepts/strong-ignorability.md",
+    "concepts/structural-causal-models.md",
+    "concepts/tabular-foundation-model.md",
+    "concepts/zero-hyperparameter-tuning.md"
+  ],
+  "tabular-foundation-model": [
+    "concepts/handling-tabular-peculiarities.md",
+    "concepts/ood-robustness.md",
+    "concepts/prior-data-fitted-networks.md",
+    "concepts/state-caching-inference.md",
+    "concepts/zero-hyperparameter-tuning.md"
+  ],
+  "zero-hyperparameter-tuning": [
+    "concepts/handling-tabular-peculiarities.md",
+    "concepts/in-context-learning.md",
+    "concepts/occams-razor.md",
+    "concepts/state-caching-inference.md",
+    "concepts/synthetic-data-prior.md",
+    "concepts/tabular-foundation-model.md"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "causalpfn": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/common-effect-rct-simulation.md",
+    "concepts/conditional-expected-potential-outcome.md",
+    "concepts/conditional-interventional-distribution.md",
+    "concepts/double-machine-learning-metalearners.md",
+    "concepts/front-door-back-door-criteria.md",
+    "concepts/heterogeneity-control.md",
+    "concepts/histogram-loss-quantized-distribution.md",
+    "concepts/integrated-coverage-error.md",
+    "concepts/observational-equivalence-unidentifiability.md",
+    "concepts/ood-robustness.md",
+    "concepts/strong-ignorability.md"
+  ],
+  "do-pfn": [
+    "concepts/amortized-causal-inference.md",
+    "concepts/common-effect-rct-simulation.md",
+    "concepts/conditional-expected-potential-outcome.md",
+    "concepts/conditional-interventional-distribution.md",
+    "concepts/double-machine-learning-metalearners.md",
+    "concepts/front-door-back-door-criteria.md",
+    "concepts/histogram-loss-quantized-distribution.md",
+    "concepts/integrated-coverage-error.md",
+    "concepts/observational-equivalence-unidentifiability.md",
+    "concepts/ood-robustness.md",
+    "concepts/strong-ignorability.md"
+  ],
+  "gaussian-process": [
+    "concepts/in-context-learning.md",
+    "concepts/posterior-predictive-distribution.md",
+    "concepts/prior-data-fitted-networks.md",
+    "concepts/synthetic-data-prior.md",
+    "concepts/tabular-foundation-model.md"
+  ],
+  "permutation-invariance": [
+    "concepts/2d-transformer-architecture.md",
+    "concepts/in-context-learning.md"
+  ],
+  "riemann-distribution": [
+    "concepts/2d-transformer-architecture.md",
+    "concepts/histogram-loss-quantized-distribution.md",
+    "concepts/posterior-predictive-distribution.md",
+    "concepts/tabular-foundation-model.md"
+  ],
+  "tabpfn": [
+    "concepts/2d-transformer-architecture.md",
+    "concepts/bayesian-neural-networks.md",
+    "concepts/common-effect-rct-simulation.md",
+    "concepts/double-machine-learning-metalearners.md",
+    "concepts/in-context-learning.md",
+    "concepts/occams-razor.md",
+    "concepts/posterior-predictive-distribution.md",
+    "concepts/prior-data-fitted-networks.md",
+    "concepts/state-caching-inference.md",
+    "concepts/structural-causal-models.md",
+    "concepts/synthetic-data-prior.md",
+    "concepts/tabular-foundation-model.md",
+    "concepts/zero-hyperparameter-tuning.md"
+  ]
+}
